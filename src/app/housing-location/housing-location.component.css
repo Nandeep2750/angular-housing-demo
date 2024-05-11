@@ -12,11 +12,11 @@
 
 .house-content{
   padding: 20px;
+  text-align: left;
 }
 
 .house-heading {
   color: var(--primary-color);
-  text-align: left;
 }
 
 .house-location {
@@ -26,4 +26,15 @@
 
 .house-location::before {
   content: url("/assets/location-pin.svg") / "";
+}
+
+section.house-card a {
+  padding-left: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+section.house-card a::after {
+  content: "\203A";
+  margin-left: 5px;
 }
