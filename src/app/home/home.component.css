@@ -1,0 +1,31 @@
+.content {
+  display: grid;
+  gap: 36px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+  margin-top: 32px;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+
+input[type="text"] {
+  border: solid 1px var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 4px;
+  display: inline-block;
+  width: 30%;
+}
+
+button.primary {
+  padding: 10px;
+  border: solid 1px var(--primary-color);
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  input[type="text"] {
+    width: 70%;
+  }
+}

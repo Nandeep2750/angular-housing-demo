@@ -1,1 +1,8 @@
-<p>housing-location works!</p>
+<section class="house-card">
+  <img class="house-image" [src]="housingLocation.photo" alt="Extirior photo of {{housingLocation.name}}" />
+
+  <div class="house-content">
+    <h2 class="house-heading"> {{housingLocation.name}}</h2>
+    <p class="house-location"> {{housingLocation.city}} {{housingLocation.state}} </p>
+  </div>
+</section>

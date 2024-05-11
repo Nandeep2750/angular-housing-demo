@@ -7,17 +7,17 @@ import { HomeComponent } from "./home/home.component";
   imports: [HomeComponent],
   template: `
     <main>
-      <header class="brand-name">
+      <header class="header">
         <img
           class="brand-logo"
           src="/assets/logo.svg"
           alt="logo"
           area-hidden="true"
         />
-        <section class="content">
-          <app-home></app-home>
-        </section>
       </header>
+      <section class="main-section">
+        <app-home></app-home>
+      </section>
     </main>
   `,
   styleUrls: ["./app.component.css"],

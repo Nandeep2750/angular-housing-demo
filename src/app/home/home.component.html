@@ -1,7 +1,9 @@
 <section>
   <form action="">
-    <input type="text" placeholder="Filter by ciry">
+    <input type="text" placeholder="Filter By City">
     <button class="primary" type="button">Search</button>
-    <app-housing-location></app-housing-location>
   </form>
+  <div class="content">
+    <app-housing-location *ngFor="let housingLocation of housingLocations" [housingLocation]="housingLocation"></app-housing-location>
+  </div>
 </section>
