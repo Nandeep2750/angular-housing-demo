@@ -1,42 +1,61 @@
-.listing-photo {
-  height: 600px;
-  width: 50%;
-  object-fit: cover;
-  border-radius: 30px;
-  float: right;
+.location-details {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: left;
+  display: inline-flex;
 }
 
-.listing-heading {
-  font-size: 48pt;
+.location-image {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.location-details .content {
+  margin-left: 30px;
+}
+
+.location-heading {
+  font-size: 48px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.listing-location::before {
+.location-address::before {
   content: url('/assets/location-pin.svg') / '';
 }
 
-.listing-location {
+.location-address {
   font-size: 24pt;
   margin-bottom: 15px;
 }
 
-.listing-features>.section-heading {
-  color: var(--secondary-color);
-  font-size: 24pt;
-  margin-bottom: 15px;
-}
-
-.listing-features {
+.location-features {
   margin-bottom: 20px;
 }
 
-.listing-features li {
-  font-size: 14pt;
+.location-features > .section-heading {
+  color: var(--secondary-color);
+  font-size: 32px;
+  margin-bottom: 15px;
 }
 
-li {
-  list-style-type: none;
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+th {
+  border-bottom: 2px solid #666;
+  background-color: #f0f0f0;
 }
 
 .listing-apply .section-heading {
@@ -44,32 +63,13 @@ li {
   margin-bottom: 15px;
 }
 
-label,
-input {
-  display: block;
-}
-
-label {
-  color: var(--secondary-color);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 12pt;
-}
-
-input {
-  font-size: 16pt;
-  margin-bottom: 15px;
-  padding: 10px;
-  width: 400px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid .3px;
-}
-
-@media (max-width: 1024px) {
-  .listing-photo {
-    width: 100%;
-    height: 400px;
-  }
+.location-apply button {
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  color: #f0f0f0;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }

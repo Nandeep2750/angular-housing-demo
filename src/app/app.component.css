@@ -9,6 +9,10 @@
   box-shadow: 0px 5px 25px var(--shadow-color);
 }
 
+.brand-logo {
+  cursor: pointer;
+}
+
 .main-section {
   margin-top: 15px;
   padding: var(--content-padding);

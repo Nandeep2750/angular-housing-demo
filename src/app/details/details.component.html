@@ -1,1 +1,28 @@
-<p>details works! {{housingLocationId}}</p>
+<article class="location-details">
+  <img class="location-image" [src]="housingLocation?.photo" alt="" />
+  <section class="content">
+    <h2 class="location-heading">{{ housingLocation?.name }}</h2>
+    <p class="location-address">{{ housingLocation?.city }}, {{ housingLocation?.state }}</p>
+    <section class="location-features">
+      <h2 class="section-heading">About This Housing Location</h2>
+      <table>
+        <tr>
+          <td>Units Available:</td>
+          <td>{{ housingLocation?.availableUnits }}</td>
+        </tr>
+        <tr>
+          <td>Dose this location have wifi?:</td>
+          <td>{{ housingLocation?.wifi }}</td>
+        </tr>
+        <tr>
+          <td>Dose this location have laundry:</td>
+          <td>{{ housingLocation?.laundry }}</td>
+        </tr>
+      </table>
+    </section>
+    <section class="location-apply">
+      <h2 class="section-heading">Apply now to live here</h2>
+      <button type="button" class="">Apply Now</button>
+    </section>
+  </section>
+</article>
