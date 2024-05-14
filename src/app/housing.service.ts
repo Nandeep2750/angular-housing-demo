@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HousingLocation } from './housing-location/housing-location';
 
 @Injectable({
@@ -109,6 +110,12 @@ export class HousingService {
   ];
   constructor() {}
 
+  applyForm = new FormGroup({
+    firstName: new FormControl('', Validators.required),
+    lastName: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email]),
+  });
+
   getAllHousingLocations = () => {
     return this.housingLocations;
   };
@@ -116,5 +123,8 @@ export class HousingService {
   getHousingLocationById = (id: number) => {
     return this.housingLocations.find(location => location.id === id);
   };
-  submitApplication = (firstName: string, lastName: string, email: string) => {};
+
+  submitApplication = () => {
+    alert(JSON.stringify(this.applyForm.value, null, 2));
+  };
 }
