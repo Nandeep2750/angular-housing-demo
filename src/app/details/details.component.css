@@ -63,13 +63,27 @@ th {
   margin-bottom: 15px;
 }
 
-.location-apply button {
-  background-color: var(--primary-color);
-  padding: 5px 10px;
-  color: #f0f0f0;
-  border: 0;
-  border-radius: 5px;
-  margin-top: 10px;
-  font-size: 16px;
-  cursor: pointer;
+.application-form {
+  margin-top: 20px;
+}
+
+label,
+input {
+  display: block;
+}
+label {
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12pt;
+}
+input {
+  font-size: 16pt;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 400px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 0.3px;
 }

@@ -24,12 +24,7 @@
     "*.css": "css"
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
   "prettier.printWidth": 120,
@@ -89,5 +84,8 @@
   "editor.codeActionsOnSaveTimeout": 1500,
   "editor.dragAndDrop": false,
   "editor.parameterHints.cycle": false,
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }
