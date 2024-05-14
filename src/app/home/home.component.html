@@ -1,9 +1,13 @@
 <section>
-  <form action="">
-    <input type="text" placeholder="Filter By City">
-    <button class="primary" type="button">Search</button>
+  <form>
+    <label for="city-filter">Filter By City: </label>
+    <select id="city-filter" (change)="onOptionChange($event)">
+      <option value="">All Cities</option>
+      <option *ngFor="let option of allCities" [value]="option">{{ option }}</option>
+    </select>
   </form>
   <div class="content">
-    <app-housing-location *ngFor="let housingLocation of housingLocations" [housingLocation]="housingLocation"></app-housing-location>
+    <app-housing-location *ngFor="let housingLocation of filteredLocations"
+      [housingLocation]="housingLocation"></app-housing-location>
   </div>
 </section>
