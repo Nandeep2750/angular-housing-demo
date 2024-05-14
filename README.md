@@ -86,3 +86,19 @@ Follow these step-by-step instructions to get your project up and running:
 
 - Remember to replace `db.json` with the actual filename of your JSON data file in step 2.
 - If you encounter any issues during the setup process, refer to the official documentation for Node.js, `json-server`, Angular, and npm for troubleshooting steps.
+
+## User Interface Preview
+
+Here are some screenshots of the Angular application's output:
+
+### List Of All Locations
+
+![List of all locations](screenshots/locations-list.png)
+
+### Filtered Locations
+
+![Filtered locations](screenshots/locations-filtered.png)
+
+### Location Details
+
+![Location details](screenshots/location-info.png)
