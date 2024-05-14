@@ -49,10 +49,8 @@ Follow these step-by-step instructions to get your project up and running:
 - Assuming you have Git installed and configured, use the following command to clone the project repository (replace the URL with the actual repository):
 
   ```bash
-  git clone -b homes-app-start git@github.com:angular/codelabs.git homes-app
+  git clone https://github.com/Nandeep2750/angular-housing-demo.git
   ```
-
-- This command downloads the project code from the specified branch (`homes-app-start`) into a local directory named `homes-app`.
 
 **5. Navigate to the Project Directory:**
 
