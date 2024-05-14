@@ -1,0 +1,38 @@
+<article class="location-details">
+  <img class="location-image" [src]="housingLocation?.photo" alt="" />
+  <section class="content">
+    <h2 class="location-heading">{{ housingLocation?.name }}</h2>
+    <p class="location-address">{{ housingLocation?.city }}, {{ housingLocation?.state }}</p>
+    <section class="location-features">
+      <h2 class="section-heading">About This Housing Location</h2>
+      <table>
+        <tr>
+          <td>Units Available:</td>
+          <td>{{ housingLocation?.availableUnits }}</td>
+        </tr>
+        <tr>
+          <td>Dose this location have wifi?:</td>
+          <td>{{ housingLocation?.wifi === true ? 'Yes' : 'No' }}</td>
+        </tr>
+        <tr>
+          <td>Dose this location have laundry?:</td>
+          <td>{{ housingLocation?.laundry === true ? 'Yes' : 'No' }}</td>
+        </tr>
+      </table>
+    </section>
+    <section class="location-apply">
+      <h2 class="section-heading">Apply now to live here</h2>
+      <form class="application-form" [formGroup]="applyForm" (submit)="housingService.submitApplication()">
+        <label for="first-name">First Name</label>
+        <input type="text" formControlName="firstName" name="first-name" id="first-name" />
+
+        <label for="last-name">Last Name</label>
+        <input type="text" formControlName="lastName" name="last-name" id="last-name" />
+
+        <label for="email">Email</label>
+        <input type="email" formControlName="email" name="email" id="email" />
+        <button type="submit" class="primary" [disabled]="!applyForm.valid">Apply Now</button>
+      </form>
+    </section>
+  </section>
+</article>
